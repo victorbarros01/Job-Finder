@@ -1,5 +1,7 @@
 const express = require("express");
+const { engine } = require("express-handlebars");
 const app = express();
+const path = require("path");
 const db = require("./db/connection");
 const jobs = require("./routes/jobs");
 const bodyParser = require("body-parser");
@@ -14,9 +16,19 @@ app.listen(port, () => {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// handlebars
+
+app.set("views", path.join(__dirname, "views"));
+app.engine(".hbs", engine({ defaultLayout: "main", extname: ".hbs" }));
+app.set("view engine", ".hbs");
+
+// static files
+
+app.use(express.static(path.join(__dirname, "public")));
+
 // routes
 app.get("/", (req, res) => {
-  res.send("Testando Servidor");
+  res.render("index");
 });
 
 // db

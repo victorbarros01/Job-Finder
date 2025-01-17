@@ -5,7 +5,7 @@
   <p id="main-subtitle" class="text-center">
     Somos o site com mais vagas da área do comércio do mercado.
   </p>
-  <form action="" class="form-inline row" id="search-form">
+  <form action="/" method="GET" class="form-inline row" id="search-form">
     <div class="form-group col-md-10">
       <input
         type="text"
@@ -25,48 +25,23 @@
   <div id="jobs-container" class="container">
     <div class="row">
       <div class="col-md-12">
+{{#if search}}
+        <h2 id="job-list-title">Buscando vagas que contem: "{{search}}" </h2>
+
+{{else}}
         <h2 id="job-list-title">Veja as nossa vagas em destaque</h2>
+{{/if}}
         <ul id="job-list" class="list-group">
-          <li class="list-group-item new-job">
-            <img src="/img/supermercado.png" alt="company" />
-            <p>Empresa</p>
-            <h2>Titulo da vaga</h2>
-            <p>1000</p>
-            <span class="new-job-label">Nova</span>
-            <a href="" class="btn btn-primary">Ver vaga</a>
-          </li>
-          <li class="list-group-item new-job">
-            <img src="/img/supermercado.png" alt="company" />
-            <p>Empresa</p>
-            <h2>Titulo da vaga</h2>
-            <p>1000</p>
-            <span class="new-job-label">Nova</span>
-            <a href="" class="btn btn-primary">Ver vaga</a>
-          </li>
-          <li class="list-group-item new-job">
-            <img src="/img/supermercado.png" alt="company" />
-            <p>Empresa</p>
-            <h2>Titulo da vaga</h2>
-            <p>1000</p>
-            <span class="new-job-label">Nova</span>
-            <a href="" class="btn btn-primary">Ver vaga</a>
-          </li>
-          <li class="list-group-item new-job">
-            <img src="/img/supermercado.png" alt="company" />
-            <p>Empresa</p>
-            <h2>Titulo da vaga</h2>
-            <p>1000</p>
-            <span class="new-job-label">Nova</span>
-            <a href="" class="btn btn-primary">Ver vaga</a>
-          </li>
-          <li class="list-group-item">
-            <img src="/img/supermercado.png" alt="company" />
-            <p>Empresa</p>
-            <h2>Titulo da vaga</h2>
-            <p>1000</p>
-            <span class="new-job-label">Nova</span>
-            <a href="" class="btn btn-primary">Ver vaga</a>
-          </li>
+          {{#each jobs}}
+            <li class="list-group-item {{#if dataValues.new_job}} new-job {{/if}}">
+              <img src="/img/supermercado.png" alt="company" />
+              <p>{{dataValues.company}}</p>
+              <h2>{{dataValues.title}}</h2>
+              <p>R${{dataValues.salary}}</p>
+              <span class="new-job-label">Nova</span>
+              <a class="btn btn-primary" href="/jobs/view/{{dataValues.id}}">Ver vaga</a>
+            </li>
+          {{/each}}
         </ul>
       </div>
     </div>

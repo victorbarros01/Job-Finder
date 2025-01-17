@@ -14,27 +14,28 @@
   <body>
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand ms-3" href="/">Job Finder</a>
+        <a class="navbar-brand" href="/">Job Finder</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav"></div>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Ver Vagas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-primary" href="/jobs/add">Abrir Vaga</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="/">Ver Vagas</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link btn btn-primary" href="/jobs/add">Abrir Vaga</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     {{{body}}}

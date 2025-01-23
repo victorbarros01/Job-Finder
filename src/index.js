@@ -60,3 +60,7 @@ db.authenticate()
 
 // jobs routes
 app.use("/jobs", jobs);
+
+export default (req, res) => {
+  return app(req, res);
+};

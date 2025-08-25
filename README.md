@@ -19,10 +19,8 @@ Cadastrar novas vagas de emprego
 - CSS
 ## Pré-requisitos
 Antes de executar a aplicação, certifique-se de ter instalado:
-- Node.js (versão 14 ou superior)<br/>
-  [Instalar Node](https://nodejs.org/pt/download)
-- Git 
-  [Instalar o Git](https://git-scm.com/downloads)
+- Node.js (versão 14 ou superior) - [Instalar Node](https://nodejs.org/pt/download)
+- Git - [Instalar o Git](https://git-scm.com/downloads)
 ## Como Executar
 1. Clone o repositório:
    ```bash

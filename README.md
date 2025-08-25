@@ -19,8 +19,7 @@ Cadastrar novas vagas de emprego
 - CSS
 ## Pré-requisitos
 Antes de executar a aplicação, certifique-se de ter instalado:
-- Node.js (versão 14 ou superior)
-- npm (geralmente vem com o Node.js)
+- [Node.js](https://nodejs.org/dist/v22.18.0/node-v22.18.0-x64.msi) (versão 14 ou superior)
 ## Como Executar
 1. Clone o repositório:
    ```bash

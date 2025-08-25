@@ -25,17 +25,13 @@ Antes de executar a aplicação, certifique-se de ter instalado:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/victorbarros01/Job-Finder.git
-   cd Job-Finder
+   cd Job-Finder/src
    ```
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-3. Execute a aplicação em modo de desenvolvimento:
+2. Execute a aplicação em modo de desenvolvimento:
    ```bash
    npm run dev
    ```
-4. Abra o navegador e acesse:
+3. Abra o navegador e acesse:
    ```
    http://localhost:3000
    ```

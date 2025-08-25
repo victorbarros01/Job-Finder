@@ -71,6 +71,6 @@ Contribuições são sempre bem-vindas! Para contribuir:
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 ## Contato
-Seu nome - [victorbarros01](https://github.com/victorbarros01) - email@exemplo.com
+Seu nome - [victorbarros01](https://github.com/victorbarros01) - 
 Link do projeto: [https://github.com/victorbarros01/Job-Finder](https://github.com/victorbarros01/Job-Finder)
 
